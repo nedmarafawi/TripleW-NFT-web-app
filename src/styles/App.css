@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100vh;
+  background: rgb(21, 29, 61);
+  background: radial-gradient(
+    circle,
+    rgba(21, 29, 61, 1) 0%,
+    rgba(44, 43, 45, 1) 100%
+  );
+
+  /* background-color: #1d2f47; */
+  overflow: scroll;
+  text-align: center;
+}
+
+.container {
+  height: 100%;
+  width: 50%;
+  /* background-color: #1d2f47; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header-container {
+  padding-top: 10px;
+}
+
+.header {
+  /* margin-top: 35px;
+  margin-bottom: 100px; */
+  /* font-size: 50px; */
+  font-size: 95px;
+  font-weight: 700;
+  font-family: 'Luckiest Guy';
+  /* color: rgb(42, 177, 240); */
+}
+
+/* .sub-text {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+} */
+
+.bg-container {
+  /* background-color: #f0ffffec; */
+  /* background-color: rgb(255, 255, 255); */
+  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+
+  display: block;
+  /* padding-right: 10%; */
+  /* padding-left: 10%; */
+  /* max-width: 100%; */
+  width: auto;
+  height: auto;
+  padding-bottom: 60px;
+  padding-top: 50px;
+  border-radius: 20px;
+  /* margin-top: -40px; */
+
+  /* opacity: 0.8; */
+
+  /* box-shadow: inset 0 0 2000px rgb(255, 239, 226); */
+
+  /* border: rgb(233, 219, 208) solid 5px; */
+  backdrop-filter: blur(5px);
+}
+
+.gradient-text {
+  overflow-wrap: break-word;
+  max-width: 100%;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  display: inline-block;
+  /* background: -webkit-linear-gradient(left, #60c657 30%, #35aee2 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+
+  /* text-shadow: #fff 0px 0px 1px, #fff 0px 0px 0px, #fff 0px 0px 5px,
+    #57c6c6 0px 0px 2px, #60c657 0px 0px 3px, #35aee2 0px 0px 4px,
+    #35aee2 0px 0px 2px, #35aee2 0px 0px 2px; */
+
+  font-family: 'Luckiest Guy';
+  color: rgb(245, 173, 126);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 0px -6px 0 #212121, 0px -6px 0 #212121, 0px 6px 0 #212121,
+    0px 6px 0 #212121, -6px 0px 0 #212121, 6px 0px 0 #212121, -6px 0px 0 #212121,
+    6px 0px 0 #212121, -6px -6px 0 #212121, 6px -6px 0 #212121,
+    -6px 6px 0 #212121, 6px 6px 0 #212121;
+}
+
+.gradient-text1 {
+  font-size: 95px;
+  font-weight: 700;
+  font-family: 'Luckiest Guy';
+  display: inline-block;
+  color: rgb(228, 123, 223);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 0px -6px 0 #212121, 0px -6px 0 #212121, 0px 6px 0 #212121,
+    0px 6px 0 #212121, -6px 0px 0 #212121, 6px 0px 0 #212121, -6px 0px 0 #212121,
+    6px 0px 0 #212121, -6px -6px 0 #212121, 6px -6px 0 #212121,
+    -6px 6px 0 #212121, 6px 6px 0 #212121;
+}
+
+.gradient-text2 {
+  font-size: 95px;
+  font-weight: 700;
+  font-family: 'Luckiest Guy';
+  display: inline-block;
+
+  color: rgb(205, 117, 223);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 0px -6px 0 #212121, 0px -6px 0 #212121, 0px 6px 0 #212121,
+    0px 6px 0 #212121, -6px 0px 0 #212121, 6px 0px 0 #212121, -6px 0px 0 #212121,
+    6px 0px 0 #212121, -6px -6px 0 #212121, 6px -6px 0 #212121,
+    -6px 6px 0 #212121, 6px 6px 0 #212121;
+}
+
+.gradient-text3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  font-size: 95px;
+  font-weight: 700;
+  font-family: 'Luckiest Guy';
+  display: inline-block;
+
+  color: rgb(179, 108, 226);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 0px -6px 0 #212121, 0px -6px 0 #212121, 0px 6px 0 #212121,
+    0px 6px 0 #212121, -6px 0px 0 #212121, 6px 0px 0 #212121, -6px 0px 0 #212121,
+    6px 0px 0 #212121, -6px -6px 0 #212121, 6px -6px 0 #212121,
+    -6px 6px 0 #212121, 6px 6px 0 #212121;
+}
+
+.gradient-text4 {
+  font-size: 120px;
+  font-weight: 700;
+  font-family: 'Luckiest Guy';
+  display: inline-block;
+
+  color: rgb(240, 133, 71);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 0px -6px 0 #212121, 0px -6px 0 #212121, 0px 6px 0 #212121,
+    0px 6px 0 #212121, -6px 0px 0 #212121, 6px 0px 0 #212121, -6px 0px 0 #212121,
+    6px 0px 0 #212121, -6px -6px 0 #212121, 6px -6px 0 #212121,
+    -6px 6px 0 #212121, 6px 6px 0 #212121;
+}
+
+.about {
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(34, 34, 34);
+  /* overflow-wrap: break-word; */
+  display: block;
+  margin-right: 55px;
+  margin-left: 55px;
+}
+
+.cta-button {
+  height: 45px;
+  border: 0;
+  width: 80%;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.connect-wallet-button {
+  background: -webkit-linear-gradient(left, #5799c6, #7648e0);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  box-shadow: 0 5px 5px rgba(44, 44, 44, 0.637);
+  /* margin-bottom: 10px; */
+
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.connect-wallet-button:hover {
+  -webkit-transform: scale(0.99);
+  transform: scale(0.99);
+}
+
+.wallet-address-title {
+  font-size: 16px;
+  color: rgb(78, 78, 78);
+  display: block;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 15px;
+}
+
+.wallet-address-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  overflow-wrap: break-word;
+  width: 80%;
+
+  background-color: rgb(43, 54, 97);
+  padding-bottom: 13px;
+  padding-top: 13px;
+  box-shadow: 0 5px 5px rgba(44, 44, 44, 0.637);
+  border-radius: 5px;
+
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.wallet-address-text:hover {
+  -webkit-transform: scale(0.99);
+  transform: scale(0.99);
+}
+
+.wallet-checkmark {
+  color: rgb(3, 148, 3);
+  display: block;
+}
+
+.success-message {
+  font-size: 16px;
+  /* padding-top: 10px; */
+
+  /* font-weight: bold; */
+  /* color: rgb(29, 29, 29); */
+}
+
+.success-message-color {
+  background-color: rgba(123, 255, 123, 0.562);
+  color: rgba(27, 80, 27, 0.925);
+  font-weight: 400;
+  border-radius: 5px;
+  padding: 0.7px;
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.mint-button {
+  /* background: -webkit-linear-gradient(left, #ffb77c, #e2672e); */
+  background: -webkit-linear-gradient(left, #5799c6, #7648e0);
+
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  box-shadow: 0 5px 5px rgba(44, 44, 44, 0.637);
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.mint-button:hover {
+  -webkit-transform: scale(0.99);
+  transform: scale(0.99);
+}
+
+.opensea-button {
+  background-color: #0098ee;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* margin-right: -10px; */
+  /* margin-left: 20px; */
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  overflow-wrap: break-word;
+  /* padding-right: 50px; */
+  align-items: center;
+  box-shadow: 0 5px 5px rgba(44, 44, 44, 0.637);
+
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.opensea-button:hover {
+  -webkit-transform: scale(0.99);
+  transform: scale(0.99);
+}
+
+.copy-action {
+  cursor: pointer;
+}
+
+.nft-gif {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 50%;
+  margin-top: 18px;
+  border-radius: 18px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.637);
+}
+
+/* .gif-bg-color {
+  border-style: solid;
+  border-width: 2px;
+  border-image: -webkit-linear-gradient(#35aee2, #ff6fdf) 1;
+} */
+
+.openSea-link {
+  /* background-color: rgb(32, 129, 226); */
+  padding: 5px;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.openSea-link:hover {
+  /* color: rgb(255, 255, 255); */
+  color: #2b73e0;
+  background-size: 105% 100%;
+  transition-duration: 0.9s;
+  transform: translate(5px) rotate(-2deg);
+  transition: all 0.4s ease-in;
+}
+
+.etherScan-link {
+  /* background-color: rgb(32, 129, 226); */
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.etherScan-link:hover {
+  /* color: rgb(255, 255, 255); */
+  color: #2b73e0;
+  background-size: 105% 100%;
+  transition-duration: 0.9s;
+  transform: translate(5px) rotate(-2deg);
+  transition: all 0.4s ease-in;
+}
+
+.mint-count {
+  color: rgb(29, 29, 29);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.twitter-logo {
+  width: 35px;
+  height: 35px;
+}
+
+.footer-text {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* KeyFrames */
+@-webkit-keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* @media (min-width: 320px) {
+  .bg-container {
+    width: 130%;
+
+    margin-right: 5%;
+    margin-left: -15%;
+  }
+  .nft-gif {
+    max-width: 160px;
+  }
+  .gradient-text {
+    font-size: 20px;
+  }
+  .opensea-button {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+} */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  .header {
+    font-size: 40px;
+  }
+  .gradient-text4 {
+    font-size: 60px;
+  }
+  .gradient-text3 {
+    font-size: 50px;
+  }
+  .gradient-text2 {
+    font-size: 50px;
+  }
+  .gradient-text1 {
+    font-size: 50px;
+  }
+  .gradient-text {
+    font-size: 50px;
+  }
+
+  .bg-container {
+    width: 150%;
+    margin-right: -40%;
+    margin-left: -23%;
+  }
+  .footer-text {
+    font-size: 10px;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+  /* .header {
+    font-size: 25px;
+  }
+  .gradient-text4 {
+    font-size: 40px;
+  }
+  .gradient-text3 {
+    font-size: 25px;
+  }
+  .gradient-text2 {
+    font-size: 25px;
+  }
+  .gradient-text1 {
+    font-size: 25px;
+  } */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+  .header {
+    font-size: 60px;
+  }
+  .gradient-text4 {
+    font-size: 75px;
+  }
+  .gradient-text3 {
+    font-size: 60px;
+  }
+  .gradient-text2 {
+    font-size: 60px;
+  }
+  .gradient-text1 {
+    font-size: 60px;
+  }
+  .gradient-text {
+    font-size: 60px;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+  .header {
+    font-size: 65px;
+  }
+  .gradient-text4 {
+    font-size: 80px;
+  }
+  .gradient-text3 {
+    font-size: 65px;
+  }
+  .gradient-text2 {
+    font-size: 65px;
+  }
+  .gradient-text1 {
+    font-size: 65px;
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .header {
+    font-size: 50px;
+  }
+  /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+}
