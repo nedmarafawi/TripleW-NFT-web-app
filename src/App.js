@@ -5,9 +5,7 @@ import nftGif from './assets/nft.gif';
 import './styles/App.css';
 
 import { ethers } from 'ethers';
-
 import { FaWallet, FaCheck, FaRegGem, FaThLarge } from 'react-icons/fa';
-
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 // Constants
