@@ -6,18 +6,9 @@ import './styles/App.css';
 
 import { ethers } from 'ethers';
 
-import {
-  FaWallet,
-  FaCheckCircle,
-  FaCheck,
-  FaRegGem,
-  FaThLarge,
-  FaQrcode,
-} from 'react-icons/fa';
+import { FaWallet, FaCheck, FaRegGem, FaThLarge } from 'react-icons/fa';
 
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-
-import { useLoading, Grid } from '@agney/react-loading';
 
 // Constants
 const TWITTER_HANDLE = 'nedmarafawi';
@@ -254,25 +245,6 @@ const App = () => {
     getMintCount();
   }, []);
 
-  // // Render Methods
-  // const renderNotConnectedContainer = () => (
-  //   <button
-  //     onClick={connectWallet}
-  //     className="cta-button connect-wallet-button"
-  //   >
-  //     Connect to Wallet
-  //   </button>
-  // );
-
-  // const renderMintUI = () => (
-  //   <button
-  //     onClick={askContractToMintNft}
-  //     className="cta-button connect-wallet-button" disabled={isLoading}
-  //   >
-  //     {isLoading || 'Minting... please wait!' : 'Mint NFT'}
-  //   </button>
-  // );
-
   return (
     <div className="App">
       <div className="container">
@@ -284,7 +256,6 @@ const App = () => {
             <div className="gradient-text2">F</div>
             <div className="gradient-text3">T</div>
           </div>
-          {/* <p className="sub-text">Mint before it’s too late!</p> */}
 
           <div className="bg-container">
             <img
@@ -304,9 +275,6 @@ const App = () => {
             <p className="about">
               TRIPLEW #01 is an NFT project consisting of 50 randomly generated
               three-word combination.
-              {/* TRIPLEW #001 is an NFT project consisting of 50 randomly
-              generated three-word combination. Each piece is a unique,
-              one-of-a-kind, and really funny. */}
             </p>
             {getButton()}
             <button
@@ -319,9 +287,7 @@ const App = () => {
             </button>
             {currentAccount !== '' && (
               <>
-                {/* <p className="wallet-address-title">Current Wallet:</p> */}
                 <p className="wallet-address-text">
-                  {/* <FaQrcode /> */}
                   <div className="copy-action">
                     <CopyToClipboard
                       onCopy={onCopyText}
@@ -331,18 +297,13 @@ const App = () => {
                       <span>{isCopied ? 'Copied!' : `${currentAccount}`}</span>
                     </CopyToClipboard>
                   </div>
-                  {/* <div className="wallet-checkmark">
-                    <FaCheckCircle />
-                  </div> */}
                 </p>
               </>
             )}
             {isSuccessful && (
               <div className="success-message ">
                 <div className="success-message-color">
-                  <div className="wallet-checkmark">
-                    {/* <FaCheckCircle /> */}
-                  </div>
+                  <div className="wallet-checkmark"></div>
                   <p>
                     <FaCheck />
                     &nbsp; Congratulations! You've just minted an NFT
@@ -373,9 +334,6 @@ const App = () => {
               </div>
             )}
           </div>
-          {/* {currentAccount === ''
-            ? renderNotConnectedContainer()
-            : renderMintUI()} */}
         </div>
         <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
