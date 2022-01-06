@@ -48,7 +48,9 @@ In order to get fake ETH, you have to ask the network for some. This fake ETH wi
 ### Stretch Goals
 - [x] Set a limit on the # of minted NFTs
 - [x] Add a button to let people see the collection
-- [x] Add a button to copy the address wallet
+- [x] Create a button to copy the address wallet
+- [ ] Add a GitHub link
+- [ ] Create a How-To instructions
 - [ ] Add a mining loading animation
 
 
