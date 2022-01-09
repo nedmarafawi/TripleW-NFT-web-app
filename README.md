@@ -1,4 +1,4 @@
-<h1 align="center">TripleW NFT</h1>
+<h1 align="center">TRIPLEW NFT</h1>
 <p align="center">Mint Your Own NFT Collection</p>
 
 <kbd>
@@ -7,7 +7,7 @@
 
 
 ## 🔖 About The Project
-TripleW #01 is an NFT project consisting of 50 randomly generated three-word combination. Each piece is a unique and really funny.<br>
+TRIPLEW #01 is an NFT project consisting of 50 randomly generated three-word combination. Each piece is a unique and really funny.<br>
 
 You can find the code for the deployed Smart Contract <a href="https://github.com/nedmarafawi/TripleW-NFT-Smart-Contract">here</a>
 
